@@ -228,13 +228,10 @@ void getValue(string pfix, char variables[], int values[], int &count)
         if (isdigit(pfix[i]))
         {
             // Convert the digit character to an integer and store it
-            if (isdigit(pfix[i])) 
-            {
-                int numValue = charToInt(pfix[i]); 
-                variables[count] = pfix[i];      
-                values[count] = numValue;        
-                count++;
-            }
+            int numValue = charToInt(pfix[i]); 
+            variables[count] = pfix[i];      
+            values[count] = numValue;        
+            count++;
         }
 
         if (isalpha(pfix[i]))
