@@ -1,7 +1,6 @@
 #include <iostream>
 #include <cmath>
 #include <cstring>
-#define M_PI 3.14159265358979323846
 using namespace std;
 
 template <class A, int Max>
@@ -229,13 +228,10 @@ void getValue(string pfix, char variables[], int values[], int &count)
         if (isdigit(pfix[i]))
         {
             // Convert the digit character to an integer and store it
-            if (isdigit(pfix[i])) 
-            {
-                int numValue = charToInt(pfix[i]); 
-                variables[count] = pfix[i];      
-                values[count] = numValue;        
-                count++;
-            }
+            int numValue = charToInt(pfix[i]); 
+            variables[count] = pfix[i];      
+            values[count] = numValue;        
+            count++;
         }
 
         if (isalpha(pfix[i]))
