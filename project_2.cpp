@@ -283,5 +283,50 @@ public:
 
 int main()
 {
-    
+    // Test for PriorityQueue_1
+    PriorityQueue_1<int, 10> pq1;
+    pq1.insert(5);
+    pq1.insert(3);
+    pq1.insert(10);
+    pq1.insert(2);
+
+    cout << "Max deleted from PQ1: " << pq1.maxDelete() << endl;
+
+    // Test for PriorityQueue_2
+    PriorityQueue_2<int, 10> pq2;
+    pq2.insert(5);
+    pq2.insert(3);
+    pq2.insert(20);
+    pq2.insert(2);
+
+    cout << "Max deleted from PQ2: " << pq2.maxDelete() << endl;
+
+    // Test for PriorityQueue_3
+    PriorityQueue_3<int, 10> pq3;
+    pq3.insert(5);
+    pq3.insert(3);
+    pq3.insert(30);
+    pq3.insert(2);
+
+    cout << "Max deleted from PQ3: " << pq3.maxDelete() << endl;
+
+    // Test for PriorityQueue_4
+    PriorityQueue_4<int, 10> pq4;
+    pq4.insert(5);
+    pq4.insert(3);
+    pq4.insert(40);
+    pq4.insert(2);
+
+    cout << "Max deleted from PQ4: " << pq4.maxDelete() << endl;
+
+    // Test for PriorityQueue_5
+    PriorityQueue_5<int, 10> pq5;
+    pq5.insert(5);
+    pq5.insert(3);
+    pq5.insert(50);
+    pq5.insert(2);
+
+    cout << "Max deleted from PQ5: " << pq5.maxDelete() << endl;
+
+    return 0;
 }
